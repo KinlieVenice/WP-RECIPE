@@ -2,9 +2,10 @@
       <div class="footer__content">
         <h4>TheRecipe</h4>
         <ul class="flex justify-center gap-2 mb-4">
-          <li>About</li>
-          <li>Contact</li>
-          <li>Recipes</li>
+            <?php wp_nav_menu(array(
+                'theme_location' => 'footer_1_menu',
+                'menu_class' => 'footer__nav'
+            ))?>
         </ul>
         <p class="text-[12px] mb-0">Copyright 2023. All Rights Reserved</p>
       </div>

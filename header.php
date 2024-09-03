@@ -14,11 +14,11 @@
     <header class="py-6">
       <div class="container mx-auto">
         <div class="flex justify-between items-center flex-col md:flex-row">
-          <a href="#">TheRecipe</a>
-          <ul class="flex gap-5 items-center">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <a href="<?php echo site_url('/')?>">TheRecipe</a>
+            <?php wp_nav_menu(array(
+                'theme_location' => 'header_menu',
+                'menu_class' => 'header__nav'
+            ))?>
         </div>
       </div>
     </header>
